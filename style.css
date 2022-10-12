@@ -1761,6 +1761,9 @@ button {
   color: #1C2752;
   margin: 0 0 140px 0;
 }
+.box-9__block--card-text-button-img {
+  margin-left: 10px;
+}
 
 .footer {
   -ms-grid-row: 3;
@@ -1967,15 +1970,12 @@ button {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.footer__block-3--line {
+.footer__line_vertical {
   width: 1px;
   height: 223px;
   background: #4B557D;
-}
-.footer__block-3--items {
-  width: 1px;
-  height: 223px;
-  background: #4B557D;
+  position: relative;
+  top: 140px;
 }
 .footer__block-3--items {
   display: -webkit-box;
@@ -1983,7 +1983,7 @@ button {
   display: flex;
 }
 .footer__block-3--items-item {
-  margin: 40px 80px 0 80px;
+  margin: 40px 30px 0 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

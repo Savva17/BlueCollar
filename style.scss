@@ -1992,6 +1992,10 @@ button {
         color: #1C2752;
         margin: 0 0 140px 0;
     }
+
+    &__block--card-text-button-img{
+        margin-left: 10px;
+    }
 }
 
 
@@ -2181,21 +2185,14 @@ button {
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
 }
-    //footer__block-3--line
-
-    &__block-3--line{
+    &__line_vertical{
         width: 1px;
         height: 223px;
         background: #4B557D;
+        position: relative;
+        top: 140px;
     }
-    //footer__block-3--items
-
-    &__block-3--items {
-        width: 1px;
-        height: 223px;
-        background: #4B557D;
-    }
-
+   
 	// .footer__block-3--items
 	&__block-3--items {
         display: flex;
@@ -2203,7 +2200,7 @@ button {
    
     // .footer__block-3--items-item
 	&__block-3--items-item {
-        margin: 40px 80px 0 80px;
+        margin: 40px 30px 0 80px;
         display: flex;
         flex-direction: column;
 	}
