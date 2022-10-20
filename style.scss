@@ -8,6 +8,13 @@ button {
     background-color: transparent;
     cursor: pointer;
   }
+$translate:translate(0px,0px);
+$translateRight:translate(120%,0px);
+$translateLeft:translate(-120%,0px);
+$translateDown:translate(0px,120px);
+$scaleNull:scale(0);
+$scale:scale(1);
+
 
 .body {
     width: 1440px;
@@ -206,8 +213,26 @@ button {
             display: flex;
             align-items: center;
             justify-content: space-between;
-		}
-
+            transform: $translateLeft;
+            -webkit-transform: $translateLeft;
+            -moz-transform: $translateLeft;
+            -ms-transform: $translateLeft;
+            -o-transform: $translateLeft;
+            opacity: 0;
+            transition:all 0.8s ease 0s;
+            -webkit-transition:all 0.8s ease 0s;
+            -moz-transition:all 0.8s ease 0s;
+            -ms-transition:all 0.8s ease 0s;
+            -o-transition:all 0.8s ease 0s;
+}
+        &__navigation._active{
+            opacity: 1;
+            transform: $translate;
+            -webkit-transform: $translate;
+            -moz-transform: $translate;
+            -ms-transform: $translate;
+            -o-transform: $translate;
+}
         //.header__navigation--container
 
         &__navigation--container{
@@ -263,8 +288,26 @@ button {
         margin: 270px 0 0 120px;
         width: 662px;
         display: flex;
-        
-    }
+        opacity: 0;
+        transform:$translateLeft;
+        -webkit-transform:$translateLeft;
+        -moz-transform:$translateLeft;
+        -ms-transform:$translateLeft;
+        -o-transform:$translateLeft;
+        transition:all 0.8s ease 0.2s;
+        -webkit-transition:all 0.8s ease 0.2s;
+        -moz-transition:all 0.8s ease 0.2s;
+        -ms-transition:all 0.8s ease 0.2s;
+        -o-transition:all 0.8s ease 0.2s;
+}
+    &__container._active{
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+}
     // .box-1__text
 
     &__text {
@@ -279,43 +322,83 @@ button {
         text-transform: capitalize;
         color: #FFFFFF;
         padding-left: 10px;
-
     }
+
+    
 
     // .box-1__title
 
     &__title {
-        max-width: 712px;
-        margin: 33px 0 0 120px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 78px;
-        letter-spacing: 1.2px;
-        text-transform: capitalize;
-        color: #FFFFFF;
-    }
-
+       max-width: 712px;
+       margin: 33px 0 0 120px;
+       font-family: 'Mulish';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 60px;
+       line-height: 78px;
+       letter-spacing: 1.2px;
+       text-transform: capitalize;
+       color: #FFFFFF;
+       opacity: 0;
+       transform: $translateLeft;
+       -webkit-transform: $translateLeft;
+       -moz-transform: $translateLeft;
+       -ms-transform: $translateLeft;
+       -o-transform: $translateLeft;
+       transition:all 0.8s ease 0.4s;
+       -webkit-transition:all 0.8s ease 0.4s;
+       -moz-transition:all 0.8s ease 0.4s;
+       -ms-transition:all 0.8s ease 0.4s;
+       -o-transition:all 0.8s ease 0.4s;
+}
+   &__title._active{
+       opacity: 1;
+       transform: $translate;
+       -webkit-transform: $translate;
+       -moz-transform: $translate;
+       -ms-transform: $translate;
+       -o-transform: $translate;
+}
+    
     // .box-1__button
 
     &__button {
-        cursor: pointer;
-        margin: 29px 0 0 120px;
-        width: 227px;
-        height: 68px;
-        background: #FFB342;
-        border: 2px solid #FFB342;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 0.36px;
-        color: #1C2752;
-
-    }
+       cursor: pointer;
+       margin: 29px 0 0 120px;
+       width: 227px;
+       height: 68px;
+       background: #FFB342;
+       border: 2px solid #FFB342;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 20px;
+       line-height: 30px;
+       letter-spacing: 0.36px;
+       color: #1C2752;
+       opacity: 0;
+       transform: $translateLeft;
+       -webkit-transform: $translateLeft;
+       -moz-transform: $translateLeft;
+       -ms-transform: $translateLeft;
+       -o-transform: $translateLeft;
+       transition:all 0.8s ease 0.6s;
+       -webkit-transition:all 0.8s ease 0.6s;
+       -moz-transition:all 0.8s ease 0.6s;
+       -ms-transition:all 0.8s ease 0.6s;
+       -o-transition:all 0.8s ease 0.6s;
 }
+   &__button._active{
+       opacity: 1;
+       transform: $translate;
+       -webkit-transform: $translate;
+       -moz-transform: $translate;
+       -ms-transform: $translate;
+       -o-transform: $translate;
+}
+
+}
+
 .active-title{
     color: #FFFFFF;
 }
@@ -328,8 +411,27 @@ button {
     &__block-1 {
         width: 745px;
         display: flex;
-
-    }
+        opacity: 0;
+        transform: $translateLeft;
+        -webkit-transform: $translateLeft;
+        -moz-transform: $translateLeft;
+        -ms-transform: $translateLeft;
+        -o-transform: $translateLeft;
+        opacity: 0;
+        transition:all 0.8s ease 0s;
+        -webkit-transition:all 0.8s ease 0s;
+        -moz-transition:all 0.8s ease 0s;
+        -ms-transition:all 0.8s ease 0s;
+        -o-transition:all 0.8s ease 0s;
+}
+    &__block-1._active{
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+}
 
     // .box-2__block-1--img
 
@@ -346,8 +448,27 @@ button {
         width: 695px;
         display: flex;
         flex-direction: column;
-        
-    }
+        opacity: 0;
+        transform: $translateRight;
+        -webkit-transform: $translateRight;
+        -moz-transform: $translateRight;
+        -ms-transform: $translateRight;
+        -o-transform: $translateRight;
+        opacity: 0;
+        transition:all 0.8s ease 0s;
+        -webkit-transition:all 0.8s ease 0s;
+        -moz-transition:all 0.8s ease 0s;
+        -ms-transition:all 0.8s ease 0s;
+        -o-transition:all 0.8s ease 0s;
+}
+    &__block-2._active{
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+}
 
     // .box-2__block-2--tilte
 
@@ -545,7 +666,7 @@ button {
     &__list {
         display: flex;
         gap: 30px;
-       
+        
     }
 
     // .box-3__list--button
@@ -563,7 +684,28 @@ button {
         letter-spacing: 0.36px;
         color: #222222;
         padding: 19px 41px 19px 41px;
-       
+        opacity: 0;
+        transform:$translateDown ;
+        -webkit-transform:$translateDown ;
+        -moz-transform:$translateDown ;
+        -ms-transform:$translateDown ;
+        -o-transform:$translateDown ;
+        
+}
+
+    &__list._active &__list--button{
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+        @for $var from 1 to 4 {
+            $delay:$var*0.1;
+            &:nth-child(#{$var}){
+                transition: all 0.8s ease #{$delay+s};
+            }
+        }
     }
 
     //.box-3__list--button-img
@@ -695,6 +837,7 @@ button {
     flex-direction: column;
     align-items: center;
     background: #F4F4F4;
+    
 
     // .box-4__block-1
 
@@ -741,7 +884,8 @@ button {
         letter-spacing: 0.36px;
         color: #1C2752;
         margin: 22px 0 12px 0;
-    }
+}
+    
 
     // .box-4__text
 
@@ -773,8 +917,41 @@ button {
         width: 380px;
         height: 378px;
         background: #1C2752;
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -o-transition: all 0.8s ease 0s;
+}
+    &__block-2._active &__block-2--cont {
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+}
+    &__block-2--cont{
+        @for $var from 1 to 7 {
+            $delay: $var * 0.2;
+            &:nth-child(#{$var}){
+                @if $var<=3 {
+                    transform: $translateLeft;
+                    -webkit-transform: $translateLeft;
+                    -moz-transform: $translateLeft;
+                    -ms-transform: $translateLeft;
+                    -o-transform: $translateLeft;
+                } @else{
+                    transform: $translateRight;
+                    -webkit-transform: $translateRight;
+                    -moz-transform: $translateRight;
+                    -ms-transform: $translateRight;
+                    -o-transform: $translateRight;
+                }
+            }
+        }
     }
-
     // .box-4__block-2--cont-img
 
     &__block-2--cont-img {
@@ -848,15 +1025,33 @@ button {
         align-items: center;
         justify-content: center;
         gap: 25px;
-    }
+        opacity: 0;
+        transform: $translateLeft;
+        -webkit-transform: $translateLeft;
+        -moz-transform: $translateLeft;
+        -ms-transform: $translateLeft;
+        -o-transform: $translateLeft;
+        transition: all .6s ease 0s;
+        -webkit-transition: all .6s ease 0s;
+        -moz-transition: all .6s ease 0s;
+        -ms-transition: all .6s ease 0s;
+        -o-transition: all .6s ease 0s;
+}
+    &__block-1--cont._active {
+        opacity: 1;
+        transform:$translate;
+        -webkit-transform:$translate;
+        -moz-transform:$translate;
+        -ms-transform:$translate;
+        -o-transform:$translate;
+}
+    
 
     // .box-5__block-1--cont-stat
 
     &__block-1--cont-stat {
         display: flex;
-        
         border: 1px solid #FFFFFF;
-
     }
 
     // .box-5__block-1--cont-stat-amount
@@ -899,7 +1094,26 @@ button {
 
     &__block-2 {
         width: 720px;
-    }
+        opacity: 0;
+        transform: $translateRight;
+        -webkit-transform: $translateRight;
+        -moz-transform: $translateRight;
+        -ms-transform: $translateRight;
+        -o-transform: $translateRight;
+        transition: all .6s ease 0s;
+        -webkit-transition: all .6s ease 0s;
+        -moz-transition: all .6s ease 0s;
+        -ms-transition: all .6s ease 0s;
+        -o-transition: all .6s ease 0s;
+}
+    &__block-2._active {
+        opacity: 1;
+        transform:$translate;
+        -webkit-transform:$translate;
+        -moz-transform:$translate;
+        -ms-transform:$translate;
+        -o-transform:$translate;
+}
 
     // .box-5__block-2--cont
 
@@ -1078,7 +1292,36 @@ button {
         background: #FFFFFF;
         border: 1px solid #D2D2D2;
         border-radius: 0px;
-    }
+        transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -o-transition: all 0.8s ease 0s;
+        opacity: 0;
+        transform: $scaleNull;
+        -webkit-transform: $scaleNull;
+        -moz-transform: $scaleNull;
+        -ms-transform: $scaleNull;
+        -o-transform: $scaleNull;
+}
+    &._active &__block-1--card{
+        opacity: 1;
+        transform: $scale;
+        -webkit-transform: $scale;
+        -moz-transform: $scale;
+        -ms-transform: $scale;
+        -o-transform: $scale;
+        @for $var from 1 to 5 {
+            $h: $var *0.1;
+            &:nth-child(#{$var}){
+                transition: all 0.8s ease #{$h + s};
+            }
+        }
+}
+
+
+    
+
 
     // .box-6__block-1--card-img
 
@@ -1137,7 +1380,26 @@ button {
     // .box-7__block-1
 
     &__block-1 {
-    }
+        opacity: 0;
+        transform: $translateLeft;
+        -webkit-transform: $translateLeft;
+        -moz-transform: $translateLeft;
+        -ms-transform: $translateLeft;
+        -o-transform: $translateLeft;
+        transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -o-transition: all 0.8s ease 0s;
+}
+    &._active &__block-1{
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+}
 
 	// .box-7__block-1-cont
     
@@ -1410,7 +1672,26 @@ button {
 
     // .box-7__block-2
     &__block-2 {
-    }
+        opacity: 0;
+        transform: $translateRight;
+        -webkit-transform: $translateRight;
+        -moz-transform: $translateRight;
+        -ms-transform: $translateRight;
+        -o-transform: $translateRight;
+        transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -o-transition: all 0.8s ease 0s;
+}
+    &._active &__block-2{
+        opacity: 1;
+        transform: $translate;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        -ms-transform: $translate;
+        -o-transform: $translate;
+}
     // .box-7__block-2-cont
 
 	&__block-2-cont {
@@ -1655,7 +1936,30 @@ button {
         width: 380px;
         height: 663px;
         background: #FFFFFF;
+        opacity: 0;
+        transform: scale(1,0) translate(0%, -100%);
+        -webkit-transform: scale(1,0) translate(0%, -100%);
+        -moz-transform: scale(1,0) translate(0%, -100%);
+        -ms-transform: scale(1,0) translate(0%, -100%);
+        -o-transform: scale(1,0) translate(0%, -100%);
+}
+    &._active &__block-2--cont {
+        opacity: 1;
+        transform: $scale $translate;
+        -webkit-transform: $scale $translate;
+        -moz-transform: $scale $translate;
+        -ms-transform: $scale $translate;
+        -o-transform: $scale $translate;
+        @for $var from 1 to 4 {
+            $b:$var*0.1;
+            &:nth-child(#{$var}){
+                transition: all 0.8s ease #{$b + s};
+            }
+        }
     }
+
+    
+
 
     // .box-8__block-2--cont-title
 
